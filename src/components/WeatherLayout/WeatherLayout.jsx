@@ -1,27 +1,35 @@
+import { SearchCity } from 'components/Search/SearchCity';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Container, Header } from './WeatherLayout.styled';
+import { Container, Header, Link, List } from './WeatherLayout.styled';
 
 export const WeatherLayout = () => {
   return (
     <Container>
       <Header>
-        <li>
-          <a href="/">Kyiv</a>
-        </li>
-        <li>
-          <a href="/lviv">Lviv</a>
-        </li>
-        <li>
-          <a href="/odesa">Odesa</a>
-        </li>
-        <li>
-          <a href="/city">City</a>
-        </li>
+        <List>
+          <span>
+            <Link href="/">Kyiv</Link>
+          </span>
+          <span>
+            <Link href="/lviv">Lviv</Link>
+          </span>
+          <span>
+            <Link href="/odesa">Odesa</Link>
+          </span>
+        </List>
+        <span>
+          <Link href="/city">City</Link>
+        </span>
       </Header>
       <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
       </Suspense>
+      <div>
+        <SearchCity />
+        <div>sfdgftghgyj</div>
+        <div>argtrgh</div>
+      </div>
     </Container>
   );
 };
