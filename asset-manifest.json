@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-weather-shecodes/static/css/main.7acaea2f.css",
-    "main.js": "/react-weather-shecodes/static/js/main.6512563e.js",
+    "main.js": "/react-weather-shecodes/static/js/main.246cb9c0.js",
     "index.html": "/react-weather-shecodes/index.html",
     "main.7acaea2f.css.map": "/react-weather-shecodes/static/css/main.7acaea2f.css.map",
-    "main.6512563e.js.map": "/react-weather-shecodes/static/js/main.6512563e.js.map"
+    "main.246cb9c0.js.map": "/react-weather-shecodes/static/js/main.246cb9c0.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.6512563e.js"
+    "static/js/main.246cb9c0.js"
   ]
 }
