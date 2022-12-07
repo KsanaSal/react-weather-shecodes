@@ -15,10 +15,22 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 24px;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
+  font-size: 24px;
+  color: #75059f;
+
+  &:hover {
+    text-decoration: underline;
+
+    &:active {
+      color: #0f7603;
+      text-shadow: 5px 3px 3px rgba(117, 5, 159, 0.4);
+    }
+  }
 `;
 
 export const List = styled.div`

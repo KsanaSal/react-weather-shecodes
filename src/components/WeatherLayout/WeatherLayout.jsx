@@ -1,3 +1,4 @@
+import { MainWeather } from 'components/MainWeather/MainWeather';
 import { SearchCity } from 'components/Search/SearchCity';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
@@ -27,7 +28,7 @@ export const WeatherLayout = () => {
       </Suspense>
       <div>
         <SearchCity />
-        <div>sfdgftghgyj</div>
+        <MainWeather />
         <div>argtrgh</div>
       </div>
     </Container>
