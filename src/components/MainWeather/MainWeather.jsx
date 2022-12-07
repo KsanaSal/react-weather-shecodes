@@ -1,27 +1,40 @@
-import { Wrap } from './MainWeather.styled';
+import IconWeather from 'components/IconWeather';
+import {
+  Caption,
+  Heading,
+  Span,
+  Temperature,
+  Text,
+  Title,
+  Wrap,
+  Wrapped,
+} from './MainWeather.styled';
 
 export const MainWeather = () => {
   return (
     <Wrap>
       <div>
-        <h1>Kyiv</h1>
-        <h3>
+        <Caption>Kyiv</Caption>
+        <Title>
           December <span>07</span>
-        </h3>
-        <h3>
+        </Title>
+        <Title>
           Wednesday <span>16:33</span>
-        </h3>
-        <h2>Snowy</h2>
+        </Title>
       </div>
+      <Wrapped>
+        <IconWeather icon="SNOW" color="#0A4E82" />
+        <Temperature>-1</Temperature>
+        <Span>℃</Span>
+      </Wrapped>
       <div>
-        <span>icon</span>
-        <span>-1 ℃</span>
-      </div>
-      <div>
-        <span>Precipitation:</span>
-        <span>16 %</span>
-        <span>Wind:</span>
-        <span>4 m/c</span>
+        <Heading>Snowy</Heading>
+        <Text>
+          Precipitation: <span>16</span> %
+        </Text>
+        <Text>
+          Wind: <span>4</span> m/c
+        </Text>
       </div>
     </Wrap>
   );
