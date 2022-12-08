@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 export const Wrap = styled.div`
   display: flex;
-  gap: 4px;
   justify-content: space-between;
+`;
+
+export const WrapInput = styled.div`
+  display: flex;
+  gap: 4px;
 `;
 
 export const Input = styled.input`

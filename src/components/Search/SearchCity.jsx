@@ -1,12 +1,18 @@
-import { CurrentButton, Input, SearchButton, Wrap } from './SearchCity.styled';
+import {
+  CurrentButton,
+  Input,
+  SearchButton,
+  Wrap,
+  WrapInput,
+} from './SearchCity.styled';
 
 export const SearchCity = () => {
   return (
     <Wrap>
-      <div>
-        <Input type="text" placeholder="Enter a city" />
+      <WrapInput>
+        <Input type="search" placeholder="Enter a city" />
         <SearchButton type="submit">Search</SearchButton>
-      </div>
+      </WrapInput>
       <CurrentButton type="button">Current</CurrentButton>
     </Wrap>
   );
