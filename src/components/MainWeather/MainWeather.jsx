@@ -15,9 +15,7 @@ export const MainWeather = () => {
     <Wrap>
       <div>
         <Caption>Kyiv</Caption>
-        <Title>
-          December <span>07</span>
-        </Title>
+        <Title>12.08.2022</Title>
         <Title>
           Wednesday <span>16:33</span>
         </Title>

@@ -4,6 +4,12 @@ export const Wrap = styled.div`
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+  padding: 16px;
+  margin: 0 auto 24px;
+  max-width: 700px;
+  background: rgba(3, 253, 221, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
 `;
 
 export const Caption = styled.h1`
