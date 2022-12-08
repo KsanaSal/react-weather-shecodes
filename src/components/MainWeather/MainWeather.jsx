@@ -1,4 +1,5 @@
 import IconWeather from 'components/IconWeather';
+import moment from 'moment';
 import {
   Caption,
   Heading,
@@ -10,30 +11,36 @@ import {
   Wrapped,
 } from './MainWeather.styled';
 
-export const MainWeather = () => {
+export const MainWeather = ({ mainWeather }) => {
+  console.log(mainWeather ? moment().utc(mainWeather.dt).format('kk:mm') : '');
   return (
     <Wrap>
-      <div>
-        <Caption>Kyiv</Caption>
-        <Title>12.08.2022</Title>
-        <Title>
-          Thursday <span>16:33</span>
-        </Title>
-      </div>
-      <Wrapped>
-        <IconWeather icon="SNOW" color="#0A4E82" />
-        <Temperature>-1</Temperature>
-        <Span>℃</Span>
-      </Wrapped>
-      <div>
-        <Heading>Snowy</Heading>
-        <Text>
-          Precipitation: <span>16</span> %
-        </Text>
-        <Text>
-          Wind: <span>4</span> m/c
-        </Text>
-      </div>
+      {mainWeather && (
+        <>
+          <div>
+            <Caption>{mainWeather.name}</Caption>
+            <Title>{moment().utc(mainWeather.dt).format('MM.DD.YYYY')}</Title>
+            <Title>
+              {moment().utc(mainWeather.dt).format('dddd')}{' '}
+              <span>{moment().utc(mainWeather.dt).format('kk:mm')}</span>
+            </Title>
+          </div>
+          <Wrapped>
+            <IconWeather icon="SNOW" color="#0A4E82" />
+            <Temperature>{Math.round(mainWeather.main.temp)}</Temperature>
+            <Span>℃</Span>
+          </Wrapped>
+          <div>
+            <Heading>{mainWeather.weather[0].main}</Heading>
+            <Text>
+              Humidity: <span>{mainWeather.main.humidity}</span> %
+            </Text>
+            <Text>
+              Wind: <span>{Math.round(mainWeather.wind.speed)}</span> m/c
+            </Text>
+          </div>
+        </>
+      )}
     </Wrap>
   );
 };

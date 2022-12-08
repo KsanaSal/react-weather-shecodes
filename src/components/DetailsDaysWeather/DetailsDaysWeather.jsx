@@ -13,6 +13,7 @@ export const DetailsDaysWeather = () => {
       <List>
         <li>
           <Title>Friday</Title>
+          <TextMax>12.09.2022</TextMax>
           <IconWeather icon="SNOW" color="#0A4E82" />
           <TextMax>
             max: <span>0</span> ℃

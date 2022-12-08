@@ -13,8 +13,10 @@ export const Wrap = styled.div`
 `;
 
 export const List = styled.ul`
+  margin: 0;
+  text-align: center;
   list-style-type: none;
-  padding: 0;
+  padding: 8px;
 `;
 
 export const Title = styled.h2`
