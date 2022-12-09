@@ -48,9 +48,7 @@ export const App = () => {
         </Link>
         <span>&nbsp;</span>
         and hosted on<span>&nbsp;</span>
-        <Link href="https://github.com/KsanaSal/react-weather-shecodes">
-          Netlify
-        </Link>
+        <Link href="https://ksanasal-react-weather.netlify.app/">Netlify</Link>
       </Text>
     </div>
   );
