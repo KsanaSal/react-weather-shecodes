@@ -12,7 +12,7 @@ export const Wrap = styled.div`
   border-radius: 24px;
 `;
 
-export const Caption = styled.h1`
+export const Caption = styled.h2`
   margin: 0;
   margin-bottom: 10px;
   font-size: 32px;
@@ -30,6 +30,7 @@ export const Title = styled.h3`
 `;
 
 export const Temperature = styled.span`
+  margin: 0 auto;
   font-size: 64px;
   font-weight: 500;
   color: #75059f;
@@ -50,6 +51,7 @@ export const Wrapped = styled.div`
 
 export const Heading = styled.h2`
   margin: 0;
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: 500;
   color: rgba(28, 28, 28, 0.7);
@@ -59,4 +61,8 @@ export const Text = styled.p`
   margin: 0;
   font-size: 16px;
   color: rgba(28, 28, 28, 0.7);
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 `;

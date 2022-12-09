@@ -4,6 +4,7 @@ import { DetailsDaysWeather } from './DetailsDaysWeather/DetailsDaysWeather';
 import { useEffect, useState } from 'react';
 import getWeatherLocation from 'data/getWeatherLocation';
 import getWeatherByDays from 'data/getWeatherDays';
+import { Caption, Link, Text } from './App.styled';
 
 export const App = () => {
   const [latitude, setLatitude] = useState(50.4501);
@@ -54,9 +55,26 @@ export const App = () => {
 
   return (
     <div>
+      <Caption>Weather forecast</Caption>
       <WeatherLayout />
       <MainWeather mainWeather={mainWeather} />
       <DetailsDaysWeather dailyData={dailyData} />
+      <Text>
+        This project was coded by Oksana Salivon of<span>&nbsp;</span>
+        <Link href="https://www.shecodes.io/graduates/51349-oksana-salivon">
+          SheCodes
+        </Link>
+        <span>&nbsp;</span>
+        and is open-sourced on<span>&nbsp;</span>
+        <Link href="https://github.com/KsanaSal/react-weather-shecodes">
+          GitHub
+        </Link>
+        <span>&nbsp;</span>
+        and hosted on<span>&nbsp;</span>
+        <Link href="https://github.com/KsanaSal/react-weather-shecodes">
+          Netlify
+        </Link>
+      </Text>
     </div>
   );
 };

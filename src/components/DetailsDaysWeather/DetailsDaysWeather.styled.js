@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.div`
-  /* display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between; */
   padding: 24px;
-  margin: 0 auto 24px;
+  margin: 0 auto 16px;
   max-width: 700px;
   background: rgba(3, 253, 221, 0.1);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -24,7 +21,7 @@ export const List = styled.ul`
 export const Title = styled.h2`
   margin: 0;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   color: #75059f;
 `;
@@ -36,6 +33,7 @@ export const TextMin = styled.p`
 
 export const TextMax = styled.p`
   margin: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: 500;
   color: rgba(28, 28, 28, 0.7);
