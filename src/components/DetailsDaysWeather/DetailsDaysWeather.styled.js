@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.div`
-  display: flex;
+  /* display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
+  justify-content: space-between; */
   padding: 24px;
   margin: 0 auto 24px;
   max-width: 700px;
@@ -13,6 +13,8 @@ export const Wrap = styled.div`
 `;
 
 export const List = styled.ul`
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   text-align: center;
   list-style-type: none;

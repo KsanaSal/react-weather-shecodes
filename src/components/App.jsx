@@ -56,7 +56,7 @@ export const App = () => {
     <div>
       <WeatherLayout />
       <MainWeather mainWeather={mainWeather} />
-      <DetailsDaysWeather />
+      <DetailsDaysWeather dailyData={dailyData} />
     </div>
   );
 };
