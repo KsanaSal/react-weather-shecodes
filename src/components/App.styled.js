@@ -4,7 +4,7 @@ export const Caption = styled.h1`
   margin: 0;
   margin-top: 20px;
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   color: #75059f;
   text-shadow: 5px 3px 3px rgba(117, 5, 159, 0.4);
