@@ -2,6 +2,7 @@ import IconWeather from 'components/IconWeather';
 import moment from 'moment';
 import {
   List,
+  Text,
   TextMax,
   TextMin,
   Title,
@@ -15,14 +16,15 @@ export const DetailsDaysWeather = ({ dailyData }) => {
         {dailyData &&
           dailyData.slice(1, 6).map(dailyWeather => (
             <li key={dailyWeather.sunset}>
-              {console.log(dailyData)}
-              {console.log(dailyWeather)}
-              {console.log(moment.unix(dailyWeather.dt).format('dddd'))}
               <Title>{moment.unix(dailyWeather.dt).format('dddd')}</Title>
               <TextMax>
                 {moment.unix(dailyWeather.dt).format('MM.DD.YYYY')}
               </TextMax>
-              <IconWeather icon="SNOW" color="#0A4E82" />
+              <IconWeather
+                color="#0A4E82"
+                code={dailyWeather.weather[0].icon}
+              />
+              <Text>{dailyWeather.weather[0].description}</Text>
               <TextMax>
                 max: <span>{Math.round(dailyWeather.temp.max)}</span> ℃
               </TextMax>

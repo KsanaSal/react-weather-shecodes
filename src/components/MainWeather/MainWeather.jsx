@@ -12,7 +12,6 @@ import {
 } from './MainWeather.styled';
 
 export const MainWeather = ({ mainWeather }) => {
-  console.log(mainWeather ? moment().utc(mainWeather.dt).format('kk:mm') : '');
   return (
     <Wrap>
       {mainWeather && (
@@ -26,12 +25,12 @@ export const MainWeather = ({ mainWeather }) => {
             </Title>
           </div>
           <Wrapped>
-            <IconWeather icon="SNOW" color="#0A4E82" />
+            <IconWeather color="#0A4E82" code={mainWeather.weather[0].icon} />
             <Temperature>{Math.round(mainWeather.main.temp)}</Temperature>
             <Span>℃</Span>
           </Wrapped>
           <div>
-            <Heading>{mainWeather.weather[0].main}</Heading>
+            <Heading>{mainWeather.weather[0].description}</Heading>
             <Text>
               Humidity: <span>{mainWeather.main.humidity}</span> %
             </Text>

@@ -6,14 +6,22 @@ import {
   WrapInput,
 } from './SearchCity.styled';
 
-export const SearchCity = () => {
+export const SearchCity = ({ changeCity, handleSubmit, currentPosition }) => {
   return (
     <Wrap>
-      <WrapInput>
-        <Input type="search" placeholder="Enter a city" />
-        <SearchButton type="submit">Search</SearchButton>
-      </WrapInput>
-      <CurrentButton type="button">Current</CurrentButton>
+      <form onSubmit={handleSubmit}>
+        <WrapInput>
+          <Input
+            type="search"
+            placeholder="Enter a city"
+            onChange={changeCity}
+          />
+          <SearchButton type="submit">Search</SearchButton>
+        </WrapInput>
+      </form>
+      <CurrentButton type="button" onClick={currentPosition}>
+        Current
+      </CurrentButton>
     </Wrap>
   );
 };

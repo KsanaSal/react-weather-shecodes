@@ -52,6 +52,7 @@ export const Wrapped = styled.div`
 export const Heading = styled.h2`
   margin: 0;
   margin-bottom: 10px;
+  text-transform: capitalize;
   font-size: 24px;
   font-weight: 500;
   color: rgba(28, 28, 28, 0.7);
