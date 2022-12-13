@@ -3,7 +3,8 @@ import { MainWeather } from './MainWeather/MainWeather';
 import { DetailsDaysWeather } from './DetailsDaysWeather/DetailsDaysWeather';
 import { useEffect, useState } from 'react';
 import getWeatherLocation from 'data/getWeatherLocation';
-import getWeatherByDays from 'data/getWeatherDays';
+import getWeatherDays from 'data/getWeatherDays';
+import getWeather from 'data/getWeather';
 import { Caption, Link, Text } from './App.styled';
 
 export const App = () => {
@@ -11,29 +12,49 @@ export const App = () => {
   const [longitude, setLongitude] = useState(30.5234);
   const [mainWeather, setMainWeather] = useState();
   const [dailyData, setDailyData] = useState();
+  const [city, setCity] = useState();
 
-  useEffect(() => {
-    function showPosition(pos) {
-      setLatitude(pos.coords.latitude);
-      setLongitude(pos.coords.longitude);
-      getWeatherLocation(latitude, longitude).then(data => {
-        getWeatherByDays(data.coord.lat, data.coord.lon).then(dailyData => {
-          setDailyData(dailyData.daily);
-        });
-        setMainWeather(data);
+  function showPosition(pos) {
+    setLatitude(pos.coords.latitude);
+    setLongitude(pos.coords.longitude);
+    getWeatherLocation(latitude, longitude).then(data => {
+      getWeatherDays(data.coord.lat, data.coord.lon).then(dailyData => {
+        setDailyData(dailyData.daily);
       });
-    }
+      setMainWeather(data);
+    });
+  }
 
-    function getCurrentPosition() {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    }
+  function getCurrentPosition() {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }
+  useEffect(() => {
     getCurrentPosition();
-  }, [latitude, longitude]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
+  function changeCity(event) {
+    setCity(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    getWeather(city).then(data => {
+      setMainWeather(data);
+      getWeatherDays(data.coord.lat, data.coord.lon).then(dailyData => {
+        setDailyData(dailyData.daily);
+      });
+    });
+  }
+  console.log(city);
   return (
     <div>
       <Caption>Weather forecast</Caption>
-      <WeatherLayout />
+      <WeatherLayout
+        changeCity={changeCity}
+        handleSubmit={handleSubmit}
+        currentPosition={getCurrentPosition}
+      />
       <MainWeather mainWeather={mainWeather} />
       <DetailsDaysWeather dailyData={dailyData} />
       <Text>
