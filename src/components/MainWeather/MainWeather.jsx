@@ -9,6 +9,7 @@ import {
   Title,
   Wrap,
   Wrapped,
+  WrappedCaption,
 } from './MainWeather.styled';
 
 export const MainWeather = ({ mainWeather }) => {
@@ -16,14 +17,14 @@ export const MainWeather = ({ mainWeather }) => {
     <Wrap>
       {mainWeather && (
         <>
-          <div>
+          <WrappedCaption>
             <Caption>{mainWeather.name}</Caption>
             <Title>{moment().utc(mainWeather.dt).format('MM.DD.YYYY')}</Title>
             <Title>
               {moment().utc(mainWeather.dt).format('dddd')}{' '}
               <span>{moment().utc(mainWeather.dt).format('kk:mm')}</span>
             </Title>
-          </div>
+          </WrappedCaption>
           <Wrapped>
             <IconWeather color="#0A4E82" code={mainWeather.weather[0].icon} />
             <Temperature>{Math.round(mainWeather.main.temp)}</Temperature>

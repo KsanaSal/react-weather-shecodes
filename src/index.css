@@ -1,5 +1,24 @@
 @import-normalize; /* bring in normalize.css styles */
 
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded/static/Unbounded-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded/static/Unbounded-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Unbounded';
+  src: url(../public/fonts/Unbounded/static/Unbounded-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

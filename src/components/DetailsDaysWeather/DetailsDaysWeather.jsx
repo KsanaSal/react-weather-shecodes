@@ -17,9 +17,7 @@ export const DetailsDaysWeather = ({ dailyData }) => {
           dailyData.slice(1, 6).map(dailyWeather => (
             <li key={dailyWeather.sunset}>
               <Title>{moment.unix(dailyWeather.dt).format('dddd')}</Title>
-              <TextMax>
-                {moment.unix(dailyWeather.dt).format('MM.DD.YYYY')}
-              </TextMax>
+              <Text>{moment.unix(dailyWeather.dt).format('MM.DD.YYYY')}</Text>
               <IconWeather
                 color="#0A4E82"
                 code={dailyWeather.weather[0].icon}
