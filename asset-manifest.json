@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c603442.css",
+    "main.css": "/static/css/main.670a375c.css",
     "main.js": "/static/js/main.09c953cb.js",
     "static/media/Unbounded-Bold.ttf": "/static/media/Unbounded-Bold.16acd5944000ba4b2140.ttf",
     "static/media/Unbounded-Medium.ttf": "/static/media/Unbounded-Medium.dfeb2212862fe279c770.ttf",
     "static/media/Unbounded-Regular.ttf": "/static/media/Unbounded-Regular.d2a446434fd598e4bb22.ttf",
     "static/media/season.png": "/static/media/season.d896c65b5a7c35e01648.png",
-    "static/media/book-weather.jpg": "/static/media/book-weather.e24ab626ec8a1ebfb912.jpg",
+    "static/media/sky-clouds-planet.jpg": "/static/media/sky-clouds-planet.430ccb4f669dd7d23089.jpg",
     "index.html": "/index.html",
-    "main.3c603442.css.map": "/static/css/main.3c603442.css.map",
+    "main.670a375c.css.map": "/static/css/main.670a375c.css.map",
     "main.09c953cb.js.map": "/static/js/main.09c953cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c603442.css",
+    "static/css/main.670a375c.css",
     "static/js/main.09c953cb.js"
   ]
 }
