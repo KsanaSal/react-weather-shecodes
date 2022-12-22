@@ -28,7 +28,7 @@ export const MainWeather = ({ mainWeather }) => {
           <Wrapped>
             <IconWeather color="#0A4E82" code={mainWeather.weather[0].icon} />
             <Temperature>{Math.round(mainWeather.main.temp)}</Temperature>
-            <Span>℃</Span>
+            <Span>°C</Span>
           </Wrapped>
           <div>
             <Heading>{mainWeather.weather[0].description}</Heading>

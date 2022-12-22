@@ -4,7 +4,7 @@ export const Wrap = styled.div`
   padding: 24px;
   margin: 0 auto 10px;
   max-width: 750px;
-  background: rgba(3, 253, 221, 0.1);
+  background: rgba(3, 253, 221, 0.5);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 24px;
 `;
@@ -30,7 +30,7 @@ export const Title = styled.h2`
 export const TextMin = styled.p`
   margin: 0;
   font-size: 16px;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.9);
 `;
 
 export const TextMax = styled.p`
@@ -39,7 +39,7 @@ export const TextMax = styled.p`
   /* font-family: 'Unbounded'; */
   font-size: 18px;
   font-weight: 500;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.8);
 `;
 export const Text = styled.p`
   margin: 0;
@@ -48,5 +48,5 @@ export const Text = styled.p`
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.8);
 `;

@@ -24,10 +24,10 @@ export const DetailsDaysWeather = ({ dailyData }) => {
               />
               <Text>{dailyWeather.weather[0].description}</Text>
               <TextMax>
-                max: <span>{Math.round(dailyWeather.temp.max)}</span> ℃
+                max: <span>{Math.round(dailyWeather.temp.max)}</span> °C
               </TextMax>
               <TextMin>
-                min: <span>{Math.round(dailyWeather.temp.min)}</span> ℃
+                min: <span>{Math.round(dailyWeather.temp.min)}</span> °C
               </TextMin>
             </li>
           ))}

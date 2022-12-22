@@ -14,11 +14,12 @@ export const Text = styled.span`
   display: flex;
   justify-content: center;
   font-size: 14px;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.9);
 `;
 export const Link = styled.a`
   text-decoration: none;
   color: #d45e09;
+  font-family: 'Unbounded';
   text-shadow: 3px 3px 2px rgba(212, 94, 9, 0.3);
 
   &:hover {

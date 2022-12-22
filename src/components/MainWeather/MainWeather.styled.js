@@ -6,7 +6,7 @@ export const Wrap = styled.div`
   padding: 24px;
   margin: 0 auto 24px;
   max-width: 750px;
-  background: rgba(3, 253, 221, 0.1);
+  background: rgba(3, 253, 221, 0.5);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 24px;
 `;
@@ -27,7 +27,8 @@ export const Title = styled.h3`
   font-family: 'Unbounded';
   font-size: 20px;
   font-weight: 500;
-  color: rgba(28, 28, 28, 0.7);
+  /* color: #010101; */
+  color: rgba(28, 28, 28, 0.8);
 `;
 
 export const Temperature = styled.span`
@@ -41,9 +42,10 @@ export const Temperature = styled.span`
 
 export const Span = styled.span`
   padding-top: 10px;
+  font-family: 'Unbounded';
   font-size: 24px;
   font-weight: 500;
-  color: #1c1c1c;
+  color: rgba(28, 28, 28, 0.8);
 `;
 
 export const WrappedCaption = styled.div`
@@ -62,13 +64,13 @@ export const Heading = styled.h2`
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 500;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.8);
 `;
 
 export const Text = styled.p`
   margin: 0;
   font-size: 16px;
-  color: rgba(28, 28, 28, 0.7);
+  color: rgba(28, 28, 28, 0.9);
 
   &:not(:last-child) {
     margin-bottom: 4px;

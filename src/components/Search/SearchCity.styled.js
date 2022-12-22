@@ -11,7 +11,7 @@ export const WrapInput = styled.div`
 `;
 
 export const Input = styled.input`
-  color: #010101;
+  color: rgba(28, 28, 28, 0.9);
   padding: 4px;
   outline: none;
   border: 2px solid #75059f;
@@ -21,6 +21,7 @@ export const Input = styled.input`
   min-height: 30px;
   width: 250px;
   font-size: 18px;
+  font-weight: 500;
 
   &:focus {
     outline: none;
@@ -39,7 +40,7 @@ export const SearchButton = styled.button`
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
   background-color: #fdebde;
   cursor: pointer;
-  color: #1c1c1c;
+  color: rgba(28, 28, 28, 0.9);
 
   &:hover {
     color: #e4fdfb;
@@ -56,7 +57,7 @@ export const CurrentButton = styled.button`
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
   background-color: #f8effd;
   cursor: pointer;
-  color: #1c1c1c;
+  color: rgba(28, 28, 28, 0.9);
 
   &:hover {
     color: #e4fdfb;
