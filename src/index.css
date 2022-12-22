@@ -25,7 +25,7 @@ body {
       rgba(255, 255, 255, 0.4)
     ),
     center / contain no-repeat url(../public/image/season.png),
-    35% url(../public/image/book-weather.jpg);
+    35% url(../public/image/sky-clouds-planet.jpg);
   opacity: 1;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
