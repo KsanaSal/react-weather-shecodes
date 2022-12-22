@@ -14,7 +14,7 @@ export const Text = styled.span`
   display: flex;
   justify-content: center;
   font-size: 14px;
-  color: rgba(28, 28, 28, 0.9);
+  color: #1c1c1c;
 `;
 export const Link = styled.a`
   text-decoration: none;
