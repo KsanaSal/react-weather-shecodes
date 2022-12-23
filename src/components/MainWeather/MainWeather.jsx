@@ -4,6 +4,7 @@ import {
   Caption,
   Heading,
   Span,
+  SpanText,
   Temperature,
   Text,
   Title,
@@ -33,10 +34,11 @@ export const MainWeather = ({ mainWeather }) => {
           <div>
             <Heading>{mainWeather.weather[0].description}</Heading>
             <Text>
-              Humidity: <span>{mainWeather.main.humidity}</span> %
+              Humidity: <SpanText>{mainWeather.main.humidity} %</SpanText>
             </Text>
             <Text>
-              Wind: <span>{Math.round(mainWeather.wind.speed)}</span> m/c
+              Wind:{' '}
+              <SpanText>{Math.round(mainWeather.wind.speed)} m/c</SpanText>
             </Text>
           </div>
         </>

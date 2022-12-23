@@ -50,3 +50,7 @@ export const Text = styled.p`
   font-weight: 500;
   color: rgba(28, 28, 28, 0.8);
 `;
+
+export const SpanText = styled.span`
+  color: #d45e09;
+`;

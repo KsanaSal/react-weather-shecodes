@@ -76,3 +76,7 @@ export const Text = styled.p`
     margin-bottom: 4px;
   }
 `;
+
+export const SpanText = styled.span`
+  color: #d45e09;
+`;

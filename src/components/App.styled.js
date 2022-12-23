@@ -28,3 +28,10 @@ export const Link = styled.a`
     text-shadow: 3px 3px 2px rgba(117, 5, 159, 0.3);
   }
 `;
+
+export const VortexWrapper = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`;

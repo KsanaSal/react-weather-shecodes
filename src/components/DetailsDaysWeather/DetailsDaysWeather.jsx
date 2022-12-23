@@ -2,6 +2,7 @@ import IconWeather from 'components/IconWeather';
 import moment from 'moment';
 import {
   List,
+  SpanText,
   Text,
   TextMax,
   TextMin,
@@ -24,10 +25,10 @@ export const DetailsDaysWeather = ({ dailyData }) => {
               />
               <Text>{dailyWeather.weather[0].description}</Text>
               <TextMax>
-                max: <span>{Math.round(dailyWeather.temp.max)}</span> °C
+                max: <SpanText>{Math.round(dailyWeather.temp.max)} °C</SpanText>
               </TextMax>
               <TextMin>
-                min: <span>{Math.round(dailyWeather.temp.min)}</span> °C
+                min: <SpanText>{Math.round(dailyWeather.temp.min)} °C</SpanText>
               </TextMin>
             </li>
           ))}
